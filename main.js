@@ -16,7 +16,11 @@ function checkAddress() {
 									 address.address1+
 									 '&zipcode='
 
+	verifyUrl = verifyUrl.replace(/\s/g, "+");
+	
 	document.getElementById("pre").innerHTML = verifyUrl;
+
+	console.log(verifyUrl);
 
 
 
